@@ -64,9 +64,9 @@ function Header() {
         <div className="col-lg-6">
           <nav>
             <ul className="d-lg-flex gap-4">
-              <li><Link to="/"> <p style={{color: '#7fba32'}}>Home </p></Link></li>
-             { CatData.slice(0,4).map((a)=>(
-                <li key={a}><Link to={`/cat/${a}`}>{a}</Link></li>
+              <li ><Link to="/" > <p style={{color: '#7fba32'}}>Home </p></Link></li>
+             { CatData.slice(0,5).map((a)=>(
+                <li className='Uppercase' key={a}><Link to={`/cat/${a}`}>{a}</Link></li>
               ))}
             </ul>
           </nav>   

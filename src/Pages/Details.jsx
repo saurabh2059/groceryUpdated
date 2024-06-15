@@ -5,7 +5,9 @@ import ProductData from '../Data/ProductData'
 
 function Details() {
   let {id}=useParams()
+
   let nn=ProductData.find((a)=>a.id==id)
+  
   return (
     
 
